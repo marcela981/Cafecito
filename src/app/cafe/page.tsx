@@ -34,7 +34,12 @@ export default function CafePage() {
   );
 }
 
-const CoffeeTypeCard = ({ region, types, image, characteristics }: CoffeeTypeCardProps) => (
+const CoffeeTypeCard = ({
+  region,
+  types,
+  image,
+  characteristics,
+}: CoffeeTypeCardProps) => (
   <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
     <div className="relative h-48">
       <Image
@@ -46,16 +51,23 @@ const CoffeeTypeCard = ({ region, types, image, characteristics }: CoffeeTypeCar
     </div>
     <div className="p-6">
       <h3 className="text-xl font-bold text-coffee-900 mb-2">{region}</h3>
+
       <div className="mb-4">
         {types.map((type) => (
-          <span key={type} className="inline-block bg-coffee-100 text-coffee-800 px-3 py-1 rounded-full text-sm mr-2 mb-2">
+          <span
+            key={type}
+            className="inline-block bg-coffee-100 text-coffee-800 px-3 py-1 rounded-full text-sm mr-2 mb-2"
+          >
             {type}
           </span>
         ))}
       </div>
+
       <ul className="list-disc pl-5 text-coffee-600">
         {characteristics.map((char, index) => (
-          <li key={index} className="mb-2">{char}</li>
+          <li key={index} className="mb-2">
+            {char}
+          </li>
         ))}
       </ul>
     </div>

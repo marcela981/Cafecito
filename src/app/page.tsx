@@ -61,27 +61,27 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <ProductCard 
-              image="/products/grano-premium.jpg"
+              image="/images/products/grano-premium.jpg"
               title="Café en Grano Premium"
-              price={29.99}
+              price={30.000}
               origin="Huila"
             />
             <ProductCard 
-              image="/products/soluble-tradicional.jpg"
+              image="/images/products/soluble-tradicional.jpg"
               title="Soluble Tradicional"
-              price={19.99}
+              price={17.000}
               origin="Antioquia"
             />
             <ProductCard 
-              image="/products/instantaneo-oscuro.jpg"
+              image="/images/products/instantaneo-oscuro.jpg"
               title="Instantáneo Tostado Oscuro"
-              price={24.99}
+              price={18.900}
               origin="Quindío"
             />
             <ProductCard 
-              image="/products/mezcla-especial.jpg"
+              image="/images/products/mezcla-especial.jpg"
               title="Mezcla Especial"
-              price={27.99}
+              price={22.499}
               origin="Valle del Cauca"
             />
           </div>
