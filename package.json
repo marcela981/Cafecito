@@ -9,11 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@next/font": "^14.2.15",
     "cafecito": "file:",
+    "framer-motion": "^12.0.6",
     "next": "15.1.6",
+    "next-offline": "^5.0.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.1",
+    "react-icons": "^5.4.0",
+    "workbox-webpack-plugin": "^7.3.0",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

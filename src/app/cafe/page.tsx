@@ -14,7 +14,7 @@ export default function CafePage() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section Café */}
-      <section className="relative h-96 bg-coffee-900 text-white">
+      <section className="relative h-96 bg-coffee-100 text-white">
         <div className="container mx-auto h-full flex items-center px-4">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -28,7 +28,7 @@ export default function CafePage() {
       </section>
 
       {/* Productos Destacados */}
-      <section className="py-16 bg-coffee-500">
+      <section className="py-16 bg-coffee-900">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Nuestros Exclusivos"
@@ -39,6 +39,7 @@ export default function CafePage() {
             {featuredCoffees.map((coffee) => (
               <ProductCard
                 key={coffee.id}
+                id={coffee.id}
                 image={coffee.image}
                 title={coffee.title}
                 price={coffee.price}
@@ -105,6 +106,7 @@ export default function CafePage() {
             {featuredCoffees.slice(0,4).map((coffee) => (
               <ProductCard
                 key={coffee.id}
+                id={coffee.id}
                 image={coffee.image}
                 title={coffee.title}
                 price={coffee.price}

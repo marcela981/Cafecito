@@ -25,7 +25,7 @@ export default function AboutPage() {
       </div>
 
       {/* Nuestra Historia */}
-      <section className="py-16 bg-coffee-50">
+      <section className="py-16 bg-coffee-300">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="De la Montaña a tu Taza"
@@ -64,8 +64,8 @@ export default function AboutPage() {
       </section>
 
       {/* Regiones Cafetaleras */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-coffee-100">
+        <div className="container mx-auto px-4  ">
           <SectionHeader
             title="Nuestras Tierras"
             subtitle="Donde el café alcanza su máxima expresión"

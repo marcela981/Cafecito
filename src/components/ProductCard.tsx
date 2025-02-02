@@ -1,3 +1,4 @@
+import { useCartStore } from '@/lib/stores/cartStore';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -54,8 +55,14 @@ export default function ProductCard({
             ${new Intl.NumberFormat('es-CO').format(price)}
           </span>
         </div>
+        <button 
+          onClick={() => addItem({ id, title, price, image })}
+          className="mt-4 w-full bg-coffee-500 text-white py-2 rounded-lg hover:bg-coffee-600 transition"
+        >
+          Añadir al Carrito
+        </button>
         <Link
-          href="/producto/1"
+          href={`/producto/${id}`}
           className={`block text-center py-2 rounded-lg transition ${
             darkMode 
               ? 'bg-coffee-600 hover:bg-coffee-700' 

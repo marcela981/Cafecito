@@ -27,7 +27,7 @@ export default function Home() {
       />
 
       {/* Sección Nuestro Proceso */}
-      <section className="py-16 bg-coffee-50">
+      <section className="py-16 bg-coffee-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-coffee-900">
             Nuestra Tradición Cafetera
