@@ -49,6 +49,14 @@ export default function Navbar() {
               Sobre Nosotros
             </Link>
             </li>
+            <li>
+              <Link
+                href="/dashboard"
+                className="text-coffee-700 dark:text-coffee-900 hover:underline decoration-2 underline-offset-4 transition"
+              >
+                Dashboard
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
