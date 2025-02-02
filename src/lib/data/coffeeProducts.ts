@@ -22,7 +22,8 @@ export type CoffeeProduct = {
       price: 17900,
       origin: 'Antioquia',
       image: '/images/products/soluble-tradicional.jpg',
-      roastLevel: 'dark'
+      roastLevel: 'dark',
+      
     },
     {
       id: '3',

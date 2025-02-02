@@ -1,3 +1,5 @@
+"use client"
+
 import SectionHeader from '@/components/SectionHeader';
 import Image from 'next/image';
 import ProductCard from '@/components/ProductCard';
@@ -36,17 +38,17 @@ export default function CafePage() {
           />
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredCoffees.map((coffee) => (
-              <ProductCard
-                key={coffee.id}
-                id={coffee.id}
-                image={coffee.image}
-                title={coffee.title}
-                price={coffee.price}
-                origin={coffee.origin}
-                roastLevel={coffee.roastLevel}
-              />
-            ))}
+          {featuredCoffees.map((coffee) => (
+            <ProductCard
+              key={coffee.id}
+              id={coffee.id} // Prop id obligatoria
+              image={coffee.image}
+              title={coffee.title}
+              price={coffee.price}
+              origin={coffee.origin}
+              roastLevel={coffee.roastLevel}
+            />
+          ))}
           </div>
         </div>
       </section>

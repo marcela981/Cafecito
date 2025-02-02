@@ -1,4 +1,5 @@
-// src/lib/stores/cartStore.ts
+"use client"
+
 import { create } from 'zustand';
 
 interface CartItem {
