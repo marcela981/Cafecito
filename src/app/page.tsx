@@ -63,25 +63,25 @@ export default function Home() {
             <ProductCard 
               image="/images/products/grano-premium.jpg"
               title="Café en Grano Premium"
-              price={30.000}
+              price={30900}
               origin="Huila"
             />
             <ProductCard 
               image="/images/products/soluble-tradicional.jpg"
               title="Soluble Tradicional"
-              price={17.000}
+              price={17900}
               origin="Antioquia"
             />
             <ProductCard 
               image="/images/products/instantaneo-oscuro.jpg"
               title="Instantáneo Tostado Oscuro"
-              price={18.900}
+              price={18900}
               origin="Quindío"
             />
             <ProductCard 
               image="/images/products/mezcla-especial.jpg"
               title="Mezcla Especial"
-              price={22.499}
+              price={25499}
               origin="Valle del Cauca"
             />
           </div>
@@ -104,7 +104,7 @@ const ProcessStep = ({ image, title, description, reverse = false }: ProcessStep
     </div>
     <div className="text-center">
       <h3 className="text-xl font-semibold text-coffee-800 mb-2">{title}</h3>
-      <p className="text-coffee-600">{description}</p>
+      <p className="text-coffee-900">{description}</p>
     </div>
   </div>
 );
@@ -122,10 +122,10 @@ const ProductCard = ({ image, title, price, origin }: ProductCardProps) => (
     <div className="p-4">
       <h3 className="text-lg font-bold text-coffee-900">{title}</h3>
       <div className="mt-2 flex justify-between items-center">
-        <span className="text-coffee-600 font-medium">{origin}</span>
+        <span className="text-coffee-300 font-medium">{origin}</span>
         <span className="text-xl font-bold text-coffee-900">${price}</span>
       </div>
-      <button className="mt-4 w-full bg-coffee-500 text-white py-2 rounded-lg hover:bg-coffee-600 transition">
+      <button className="mt-4 w-full bg-coffee-300 text-white py-2 rounded-lg hover:bg-coffee-600 transition">
         Ver Detalles
       </button>
     </div>
