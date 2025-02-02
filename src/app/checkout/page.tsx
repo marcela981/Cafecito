@@ -87,7 +87,7 @@ export default function CheckoutPage() {
             >
               <div className="flex items-center justify-center gap-3">
                 <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-coffee-900"></div>
-                <p className="text-coffee-700">
+                <p className="text-coffee-100">
                   Procesando pago con {selectedMethod === 'mercadopago' ? 'MercadoPago' : 'PSE'}...
                 </p>
               </div>

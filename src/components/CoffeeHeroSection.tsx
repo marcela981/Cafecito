@@ -14,6 +14,7 @@ export default function CoffeeHeroSection({ title, subtitle }: CoffeeHeroProps) 
           src="/images/hero-bg.jpg"
           alt="Plantación de café colombiano"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
           quality={100}

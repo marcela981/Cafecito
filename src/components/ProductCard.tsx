@@ -46,12 +46,15 @@ export default function ProductCard({
       darkMode ? 'bg-coffee-800' : 'bg-white'
     }`}>
       <div className="relative h-48">
+      <div className="relative h-48 w-full">
         <Image
           src={image}
           alt={title}
           fill
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover"
         />
+      </div>
         {roastLevel && (
           <div className="absolute top-2 left-2 flex items-center gap-1">
             <span className={`w-3 h-3 rounded-full ${roastColors[roastLevel]}`} />

@@ -2,7 +2,7 @@
 import { useCartStore } from "@/lib/stores/cartStore";
 import Image from 'next/image';
 import { FiArrowLeft } from 'react-icons/fi';
-import PaymentModal from '@/components/PaymentModal';
+import Link from 'next/link';
 
 export default function CartPage() {
   const { items, removeItem, updateQuantity } = useCartStore();
@@ -12,9 +12,9 @@ export default function CartPage() {
     <div className="min-h-screen bg-coffee-900">
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         <div className="flex items-center mb-8">
-          <a href="/cafe" className="flex items-center text-coffee-100 hover:text-coffee-300">
-            <FiArrowLeft className="mr-2" /> Seguir comprando
-          </a>
+            <Link href="/cafe" className="flex items-center text-coffee-700 hover:text-coffee-900">
+                <FiArrowLeft className="mr-2" /> Seguir comprando
+            </Link>
           <h1 className="text-3xl font-bold text-coffee-300 ml-4">Tu Pedido</h1>
         </div>
 
@@ -38,6 +38,7 @@ export default function CartPage() {
                       src={item.image}
                       alt={item.title}
                       fill
+                      sizes="(max-width: 768px) 100px, 150px"
                       className="object-cover"
                     />
                   </div>
@@ -87,9 +88,13 @@ export default function CartPage() {
                   ${total.toLocaleString('es-CO')}
                 </p>
               </div>
-              
-              <PaymentModal />
-              
+    
+              <Link
+                href="/checkout"
+                className="w-full bg-coffee-500 text-white py-3 rounded-lg hover:bg-coffee-600 transition text-center block"
+              >
+                Proceder al Pago
+              </Link>
               <p className="text-sm text-coffee-900 mt-4 text-center">
                 Envío calculado en el siguiente paso
               </p>
