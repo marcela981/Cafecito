@@ -78,7 +78,6 @@
     "regions": ["gru1"],
     "framework": "nextjs",
     "outputDirectory": "dist",
-    "compress": true,
     "build": {
       "env": {
         "NEXT_PUBLIC_GA_ID": "@google-analytics-id",
