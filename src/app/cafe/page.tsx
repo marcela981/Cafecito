@@ -54,14 +54,14 @@ export default function CafePage() {
       </section>
 
       {/* Tipos por Región */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-coffee-100 text-white">
+        <div className=" container mx-auto px-4">
           <SectionHeader
             title="Orígenes y Características"
             subtitle="Descubre la diversidad de nuestras regiones cafetaleras"
           />
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8">
             <CoffeeTypeCard
               region="Eje Cafetero"
               types={['Supremo', 'Excelso', 'Gourmet']}

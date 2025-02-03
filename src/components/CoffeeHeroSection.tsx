@@ -9,7 +9,7 @@ type CoffeeHeroProps = {
 export default function CoffeeHeroSection({ title, subtitle }: CoffeeHeroProps) {
   return (
     <section className="relative h-[70vh] min-h-[500px]">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 ">
         <Image
           src="/images/hero-bg.jpg"
           alt="Plantación de café colombiano"
@@ -23,12 +23,12 @@ export default function CoffeeHeroSection({ title, subtitle }: CoffeeHeroProps) 
       </div>
 
       <div className="relative z-10 h-full flex items-center">
-        <div className="container mx-auto px-4 text-center md:text-left">
+        <div className="container mx-auto px-4 text-center md:text-left ">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               {title}
             </h1>
-            <p className="text-xl md:text-2xl text-coffee-100 mb-8">
+            <p className="text-xl md:text-2xl font-bold text-white mb-8">
               {subtitle}
             </p>
             <div className="flex flex-col md:flex-row gap-4">

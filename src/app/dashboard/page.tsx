@@ -23,8 +23,8 @@ export default function DashboardPage() {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-coffee-50 flex items-center justify-center p-4">
-        <form onSubmit={handleLogin} className="bg-coffee-100 p-8 rounded-xl shadow-lg max-w-md w-full">
+      <div className="min-h-screen bg-coffee-50 flex items-center justify-center p-4 ">
+        <form onSubmit={handleLogin} className="bg-coffee-100 p-8 rounded-xl shadow-lg max-w-md w-full ">
           <h2 className="text-2xl font-bold text-coffee-900 mb-6">Acceso Restringido</h2>
           <input
             type="password"

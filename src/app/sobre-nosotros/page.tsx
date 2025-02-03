@@ -14,10 +14,10 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-coffee-900/60 flex items-center">
           <div className="container mx-auto px-4 text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-coffee-100 black:text-white">
               Raíces Cafeteras
             </h1>
-            <p className="text-xl md:text-2xl max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl max-w-2xl mx-auto text-coffee-100 black:text-white">
               Cultivando tradición desde el corazón de Colombia
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function AboutPage() {
       </div>
 
       {/* Nuestra Historia */}
-      <section className="py-16 bg-coffee-300">
+      <section className="py-16 bg-coffee-300 text-white">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="De la Montaña a tu Taza"
@@ -64,7 +64,7 @@ export default function AboutPage() {
       </section>
 
       {/* Regiones Cafetaleras */}
-      <section className="py-16 bg-coffee-100">
+      <section className="py-16 bg-coffee-100 text-white">
         <div className="container mx-auto px-4  ">
           <SectionHeader
             title="Nuestras Tierras"

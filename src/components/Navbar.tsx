@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
           <Link 
             href="/cart" 
-            className="relative text-coffee-700 hover:text-coffee-900 transition"
+            className="relative text-coffee-100 dark:text-white hover:text-coffee-900 transition"
           >
             <div className="relative">
             <FiShoppingCart className="text-2xl" />
@@ -40,7 +40,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/cafe"
-              className="text-coffee-700 dark:text-coffee-900 hover:underline decoration-2 underline-offset-4 transition"
+              className="text-coffee-100 dark:text-white hover:underline hover:text-coffee-900 decoration-2 underline-offset-4 transition"
             >
               Café
             </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/sobre-nosotros"
-              className="text-coffee-700 dark:text-coffee-900 hover:underline decoration-2 underline-offset-4 transition"
+              className="text-coffee-100 dark:text-white hover:underline hover:text-coffee-900 decoration-2 underline-offset-4 transition"
             >
               Sobre Nosotros
             </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/dashboard"
-                className="flex items-center gap-2 text-coffee-700 hover:text-coffee-900"
+                className="flex items-center gap-2 text-coffee-100 dark:text-white hover:text-coffee-900"
                 title="Panel de control"
               >
                 <svg 
