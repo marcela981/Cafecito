@@ -18,8 +18,8 @@ Constructor de tiendas digitales ultra-rápido para microPYMEs, con:
 |--------------|-----------|---------|
 | ![Hero](public/images/screenshots/hero-section.png) | ![Productos](public/images/screenshots/products.png) | ![Carrito](public/images/screenshots/cart.png) |
 
-| Checkout | Dashboard | Móvil |
-|----------|-----------|-------|
+| Checkout | Dashboard |
+|----------|-----------|
 | ![Pagos](public/images/screenshots/checkout.png) | ![Finanzas](public/images/screenshots/dashboard.png) |
 
 ## 🚀 Configuración | Setup
