@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cafecito ☕ | Digital Store Builder
 
-## Getting Started
+![Cafecito](public/images/screenshots/Cafecito.png)
 
-First, run the development server:
+## 🌍 Contexto | Context
+**Problema identificado | Identified Problem**  
+En Latinoamérica, más del 60% de los pequeños comercios carecen de presencia digital efectiva. Los tenderos y productores locales necesitan una solución simple, rápida y económica para mostrar/sus productos y aceptar pagos digitales.
 
+**Solución | Solution**  
+Constructor de tiendas digitales ultra-rápido para microPYMEs, con:
+- Plantillas locales (arepas, café, artesanías)
+- Simulador financiero integrado
+- Modo offline-first
+- Integración con pasarelas de pago locales
+
+## 📸 Capturas | Screenshots
+| Sección Hero | Productos | Carrito |
+|--------------|-----------|---------|
+| ![Hero](public/images/screenshots/hero-section.png) | ![Productos](public/images/screenshots/products.png) | ![Carrito](public/images/screenshots/cart.png) |
+
+| Checkout | Dashboard | Móvil |
+|----------|-----------|-------|
+| ![Pagos](public/images/screenshots/checkout.png) | ![Finanzas](public/images/screenshots/dashboard.png) |
+
+## 🚀 Configuración | Setup
 ```bash
+# 1. Clonar repositorio
+git clone https://github.com/tu-usuario/cafecito.git
+
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Variables de entorno (crear .env.local)
+NEXT_PUBLIC_MERCADOPAGO_KEY=tu_clave
+NEXT_PUBLIC_DASHBOARD_PASSWORD=clave_segura
+
+# 4. Iniciar servidor
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Cafecito ☕ | Digital Store Builder
+
+![Cafecito](public/images/screenshots/Cafecito.png)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌍 Context
+**Identified Problem**  
+In Latin America, over 60% of small businesses lack effective digital presence. Local shopkeepers and producers need a simple, fast, and affordable solution to showcase their products and accept digital payments.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Solution**  
+Ultra-fast digital store builder for micro-SMEs featuring:
+- Localized templates (arepas, coffee, crafts)
+- Integrated financial simulator
+- Offline-first mode
+- Local payment gateway integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Quick Start
+```bash
+# 1. Clone repo
+git clone https://github.com/your-user/cafecito.git
 
-## Learn More
+# 2. Install dependencies
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# 3. Environment variables (create .env.local)
+NEXT_PUBLIC_MERCADOPAGO_KEY=your_key
+NEXT_PUBLIC_DASHBOARD_PASSWORD=secure_password
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 4. Start dev server
+npm run dev
