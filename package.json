@@ -12,6 +12,7 @@
     "@headlessui/react": "^2.2.0",
     "@next/font": "^14.2.15",
     "@react-pdf/renderer": "^4.1.6",
+    "@sentry/nextjs": "^8.54.0",
     "cafecito": "file:",
     "chart.js": "^4.4.7",
     "framer-motion": "^12.0.6",

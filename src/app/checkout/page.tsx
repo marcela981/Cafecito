@@ -52,7 +52,7 @@ export default function CheckoutPage() {
               className="w-full p-6 rounded-xl border-2 border-coffee-100 hover:border-coffee-300 transition-colors flex items-center gap-4"
             >
               <Image 
-                src="/images/mercadopago-logo.webp" 
+                src="/images/mercadopago-logo.png" 
                 alt="MercadoPago" 
                 width={120}
                 height={32}
