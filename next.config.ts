@@ -1,32 +1,28 @@
 import withOffline from 'next-offline';
+import { NextConfig } from 'next';
 
-const nextConfig = {
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  images: {
+    
+    formats: ['image/avif', 'image/webp'] as Array<'image/avif' | 'image/webp'>,
+    deviceSizes: [640, 750, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 3600,
+  },
   workboxOpts: {
-    swDest: 'static/sw.js',
+    swDest: 'public/service-worker.js',
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,
         handler: 'NetworkFirst',
         options: {
-          cacheName: 'offline-cache',
-          networkTimeoutSeconds: 15,
-          expiration: {
-            maxEntries: 200,
-          },
+          cacheName: 'dynamic-cache',
+          expiration: { maxEntries: 200 },
         },
       },
     ],
   },
 };
-
-module.exports = {
-  images: {
-    domains: [], // Para imágenes externas ej: ['upload.wikimedia.org']
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 3600,
-  },
-}
 
 export default withOffline(nextConfig);

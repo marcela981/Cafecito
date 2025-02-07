@@ -12,12 +12,14 @@ export default function CoffeeHeroSection({ title, subtitle }: CoffeeHeroProps) 
       <div className="absolute inset-0 z-0 ">
         <Image
           src="/images/hero-bg.jpg"
-          alt="Plantación de café colombiano"
+          alt="Café Colombiano"
           fill
           sizes="100vw"
           className="object-cover"
           priority
-          quality={100}
+          quality={85}
+          placeholder="blur"
+          blurDataURL="data:image/webp;base64,UklGRkICAABXRUJQVlA4WAoAAAAgAAAAHwAAHwAAQUxQSEIAAAABBxAREQiIqGABAAAAALT/jyAi/8/v/38iIrKpGAD4fwEAAAA="
         />
         <div className="absolute inset-0 bg-gradient-to-r from-coffee-900/80 to-coffee-700/60" />
       </div>

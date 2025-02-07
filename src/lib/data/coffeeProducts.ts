@@ -11,7 +11,7 @@ export type CoffeeProduct = {
     {
       id: '1',
       title: 'Café Supremo Eje Cafetero',
-      price: 18900,
+      price: 18999,
       origin: 'Quindío',
       image: '/images/products/instantaneo-oscuro.jpg',
       roastLevel: 'medium'
@@ -19,7 +19,7 @@ export type CoffeeProduct = {
     {
       id: '2',
       title: 'Soluble Tradicional',
-      price: 17900,
+      price: 17999,
       origin: 'Antioquia',
       image: '/images/products/soluble-tradicional.jpg',
       roastLevel: 'dark',
@@ -28,7 +28,7 @@ export type CoffeeProduct = {
     {
       id: '3',
       title: 'Tostado Oscuro Huila',
-      price: 30900,
+      price: 30999,
       origin: 'Huila',
       image: '/images/products/grano-premium.jpg',
       roastLevel: 'dark'

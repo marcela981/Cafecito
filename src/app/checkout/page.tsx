@@ -16,7 +16,6 @@ export default function CheckoutPage() {
     setIsProcessing(true);
     setSelectedMethod(method);
     
-    // Simular procesamiento de pago
     await new Promise(resolve => setTimeout(resolve, 2000));
     
     setIsProcessing(false);

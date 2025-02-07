@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Helvetica', 'Arial', 'sans-serif'], // Fuente principal
+        cursive: ['Dancing Script', 'Brush Script MT', 'cursive'], // Fuente secundaria cursiva
+      },
       colors: {
         coffee: {
           100: coffeeColorPalettes[0].colors.primary,

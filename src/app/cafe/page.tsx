@@ -1,9 +1,13 @@
 "use client"
 
 import SectionHeader from '@/components/SectionHeader';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import ProductCard from '@/components/ProductCard';
 import { featuredCoffees } from '@/lib/data/coffeeProducts';
+
+const ProductCard = dynamic(() => import('@/components/ProductCard'), { 
+  loading: () => <p>Cargando...</p> 
+});
 
 type CoffeeTypeCardProps = {
   region: string;
@@ -29,7 +33,6 @@ export default function CafePage() {
         </div>
       </section>
 
-      {/* Productos Destacados */}
       <section className="py-16 bg-coffee-900">
         <div className="container mx-auto px-4">
           <SectionHeader
@@ -41,7 +44,7 @@ export default function CafePage() {
           {featuredCoffees.map((coffee) => (
             <ProductCard
               key={coffee.id}
-              id={coffee.id} // Prop id obligatoria
+              id={coffee.id} 
               image={coffee.image}
               title={coffee.title}
               price={coffee.price}
