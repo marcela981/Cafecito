@@ -18,10 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Precarga de imágenes y fuentes */}
         <link rel="preload" as="image" href="/images/hero-bg.jpg" />
         <link rel="preload" as="font" href="/fonts/helvetica.woff2" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" />
-
-        {/* Fuente secundaria desde Google Fonts */}
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-sans antialiased">
         <Navbar />

@@ -12,7 +12,6 @@ const nextConfig: NextConfig = {
     {
       source: "/(.*)",
       headers: [
-        { key: "Content-Encoding", value: "br, gzip" },
         { key: "X-Frame-Options", value: "SAMEORIGIN" },
       ],
     },
